@@ -38,15 +38,15 @@ export default async function Page({
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         {data?.map((j: any) => {
-          const country = Array.isArray(j.countries)
-            ? j.countries[0]
-            : j.countries
+          const countryName = Array.isArray(j.countries)
+            ? j.countries[0]?.name_bn
+            : j.countries?.name_bn
 
           return (
             <Link className="card p-6" href={`/jobs/${j.id}`} key={j.id}>
               <h2 className="text-xl font-bold text-navy">{j.title_bn}</h2>
               <p className="mt-2 text-slate-500">
-                {country?.name_bn || '—'} • {j.location_bn || '—'}
+                {countryName || '—'} • {j.location_bn || '—'}
               </p>
               <p className="mt-4 font-semibold">
                 {j.salary
