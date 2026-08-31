@@ -1,0 +1,1 @@
+import type {Config} from 'tailwindcss';export default {content:['./app/**/*.{ts,tsx}','./components/**/*.{ts,tsx}','./contexts/**/*.{ts,tsx}'],theme:{extend:{colors:{navy:'#0B1C39',emerald:'#10B981'},fontFamily:{bengali:['var(--font-hind)','sans-serif']}}},plugins:[]} satisfies Config;

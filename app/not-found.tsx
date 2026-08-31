@@ -1,0 +1,1 @@
+import Link from'next/link';export default function NotFound(){return <main className="container-gws flex min-h-[60vh] flex-col items-center justify-center text-center"><h1 className="text-6xl font-bold text-navy">৪০৪</h1><h2 className="mt-4 text-2xl font-bold">পৃষ্ঠাটি খুঁজে পাওয়া যায়নি</h2><Link href="/" className="btn-primary mt-6">হোমে ফিরুন</Link></main>}

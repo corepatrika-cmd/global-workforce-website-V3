@@ -1,0 +1,1 @@
+export type Role='SUPER_ADMIN'|'ADMIN'|'STAFF';export type JobStatus='draft'|'published'|'archived';export type CandidateStatus='new'|'reviewing'|'interviewed'|'shortlisted'|'hired'|'rejected';export type ApplicationStatus='pending'|'under_review'|'shortlisted'|'interviewed'|'offered'|'hired'|'rejected';

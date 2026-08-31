@@ -1,0 +1,1 @@
+import{createClient}from'@/lib/supabase/server';export default async function Page(){const s=await createClient();const{data}=await s.from('site_settings').select('*');return <div><h1 className="text-3xl font-bold text-navy">সাইট সেটিংস</h1><div className="card mt-6 p-6"><p className="text-slate-500">বর্তমান সেটিংস রেকর্ড: {data?.length||0}</p></div></div>}
